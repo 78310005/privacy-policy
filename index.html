@@ -1,69 +1,96 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>隐私政策 / Privacy Policy</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-bottom: 16px;
-        }
-
-        .last-updated {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 30px;
-        }
-
+        :root { --text: #1a1a1a; --muted: #555; --border: #e5e5e5; --bg: #fff; }
         @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #1a1a1a;
-                color: #f0f0f0;
-            }
-
-            .last-updated {
-                color: #aaa;
-            }
+            :root { --text: #f0f0f0; --muted: #999; --border: #333; --bg: #141414; }
         }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            margin: 0;
+            padding: 24px 20px 48px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .lang-nav { margin-bottom: 24px; font-size: 0.875rem; }
+        .lang-nav a { color: var(--muted); text-decoration: none; margin-right: 12px; }
+        .lang-nav a:hover { color: var(--text); }
+        .lang-nav a.active { color: var(--text); font-weight: 600; }
+        section { margin-bottom: 48px; }
+        h1 { font-size: 1.5rem; font-weight: 700; margin: 0 0 8px; }
+        .updated { font-size: 0.875rem; color: var(--muted); margin-bottom: 20px; }
+        h2 { font-size: 1.125rem; font-weight: 600; margin: 24px 0 10px; }
+        p, li { margin: 0 0 10px; color: var(--text); }
+        ul { padding-left: 1.25rem; margin: 0 0 16px; }
+        a { color: #0a7ea4; }
+        @media (prefers-color-scheme: dark) { a { color: #5eb8e6; } }
+        hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
     </style>
 </head>
-
 <body>
-    <h1>隐私政策</h1>
-    <p class="last-updated">最后更新：2025-04-01</p>
+    <nav class="lang-nav" aria-label="Language">
+        <a href="#zh">中文</a>
+        <a href="#en">English</a>
+    </nav>
 
-    <p>我们致力于保护您的隐私。本隐私政策解释了我们如何收集、使用和保护您在使用我们的应用程序时的信息。</p>
+    <!-- 中文 -->
+    <section id="zh" lang="zh-Hans">
+        <h1>隐私政策</h1>
+        <p class="updated">最后更新：2025-04-01</p>
 
-    <h2>我们收集的信息</h2>
-    <p>我们不收集任何个人信息。所有身份验证数据都存储在您的设备本地，绝不会传输到我们的服务器或任何第三方。</p>
+        <p>我们致力于保护您的隐私。本隐私政策解释了我们如何收集、使用和保护您在使用我们的应用程序时的信息。</p>
 
-    <h2>我们如何使用您的信息</h2>
-    <p>由于我们不收集您的信息，我们不会将其用于任何目的。您的身份验证令牌仅保留在您的设备上。</p>
+        <h2>我们收集的信息</h2>
+        <p>我们不收集任何个人信息。所有身份验证数据都存储在您的设备本地，绝不会传输到我们的服务器或任何第三方。</p>
 
-    <h2>数据安全</h2>
-    <p>我们实施适当的安全措施来保护应用程序内存储的数据。您的身份验证数据经过加密并仅存储在您的本地设备上。</p>
+        <h2>我们如何使用您的信息</h2>
+        <p>由于我们不收集您的信息，我们不会将其用于任何目的。您的身份验证令牌仅保留在您的设备上。</p>
 
-    <h2>隐私政策的变更</h2>
-    <p>我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新"最后更新"日期来通知您任何变更。</p>
+        <h2>数据安全</h2>
+        <p>我们实施适当的安全措施来保护应用程序内存储的数据。您的身份验证数据经过加密并仅存储在您的本地设备上。</p>
 
-    <h2>联系我们</h2>
-    <p>如果您对本隐私政策有任何疑问，请通过service@titchwhale.com与我们联系。</p>
+        <h2>隐私政策的变更</h2>
+        <p>我们可能会不时更新我们的隐私政策。我们将通过在此页面上发布新的隐私政策并更新「最后更新」日期来通知您任何变更。</p>
+
+        <h2>联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问，请通过 <a href="mailto:service@titchwhale.com">service@titchwhale.com</a> 与我们联系。</p>
+    </section>
+
+    <hr>
+
+    <!-- English -->
+    <section id="en" lang="en">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: 2025-04-01</p>
+
+        <p>We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our application.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We do not collect any personal information. All authentication data is stored locally on your device and is never transmitted to our servers or any third party.</p>
+
+        <h2>How We Use Your Information</h2>
+        <p>Since we do not collect your information, we do not use it for any purpose. Your authentication tokens remain only on your device.</p>
+
+        <h2>Data Security</h2>
+        <p>We implement appropriate security measures to protect data stored within the application. Your authentication data is encrypted and stored only on your local device.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last updated" date.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:service@titchwhale.com">service@titchwhale.com</a>.</p>
+    </section>
+
+    <hr>
+    <p style="font-size: 0.875rem; color: var(--muted);">隐私政策 / Privacy Policy</p>
 </body>
-
 </html>
